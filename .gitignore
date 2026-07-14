@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Modelos e artefatos (grandes)
+models/base/*
+models/finetuned/*
+models/mlx/*
+models/gguf/*
+!models/**/.gitkeep
+
+# Dados processados
+data/processed/*
+data/raw/*
+!data/**/.gitkeep
+
+# MLflow / experimentos
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Cache do Hugging Face local ao projeto (se você setar HF_HOME aqui)
+.hf_cache/
+
+# macOS
+.DS_Store

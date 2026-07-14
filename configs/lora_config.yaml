@@ -1,0 +1,28 @@
+# Config de referência para mlx_lm.lora.
+# Uso:  python -m mlx_lm lora --config configs/lora_config.yaml
+#
+# Os valores aqui são um bom ponto de partida para modelos pequenos (0.5B–1.5B)
+# em um Mac com 24 GB de RAM unificada.
+
+model: "mlx-community/Qwen2.5-0.5B-Instruct-4bit"
+train: true
+data: "data/processed"          # espera train.jsonl e valid.jsonl
+adapter_path: "models/finetuned/lora-adapters"
+
+# Hiperparâmetros de treino
+iters: 200
+batch_size: 4
+num_layers: 8                   # nº de camadas (do topo) que recebem LoRA
+learning_rate: 1.0e-4
+max_seq_length: 1024
+
+# Relatórios / checkpoints
+steps_per_report: 20
+steps_per_eval: 100
+save_every: 100
+
+# Parâmetros do LoRA
+lora_parameters:
+  rank: 8
+  scale: 20.0
+  dropout: 0.0
