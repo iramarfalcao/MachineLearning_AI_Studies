@@ -1,0 +1,10 @@
+# Dependências do "Data Science do Zero" (Joel Grus)
+jupyterlab
+ipykernel
+matplotlib
+numpy
+pandas
+scikit-learn
+requests
+beautifulsoup4
+tqdm
