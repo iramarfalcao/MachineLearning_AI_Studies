@@ -12,7 +12,7 @@ cada script/notebook corresponde a um módulo do currículo em `docs/`.
 
 - Todo o Python vive num venv em `.venv/`. **Sempre ative antes de rodar qualquer coisa:**
   ```bash
-  cd /Users/iramarfalcao/ZCodeProject && source .venv/bin/activate
+  cd /Users/iramarfalcao/Github/MachineLearning_AI_Studies && source .venv/bin/activate
   ```
 - Se um `import`/`mlx_lm` falhar por "módulo não encontrado", quase sempre o venv não está ativo.
 - Dependências em `requirements.txt`. Reinstalar: `make setup`.
