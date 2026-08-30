@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sysctl -n machdep.cpu.brand_string)",
+      "Bash(sysctl -n hw.memsize)",
+      "Bash(awk '{print $1/1073741824 \" GB\"}')",
+      "Bash(python3 -m pip --version)",
+      "Bash(brew --version)"
+    ]
+  }
+}
