@@ -29,3 +29,8 @@ mlflow.db
 
 # Configuracoes locais do Claude Code (por maquina)
 .claude/settings.local.json
+
+# Lixo local e artefatos gerados
+*.profraw
+*.profdata
+xcuserdata/
